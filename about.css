@@ -71,7 +71,21 @@ body{
 	position:fixed
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+  .menu {
+    width: 260px;
+    left: -260px;
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .menu {
+    width: 270px;
+    left: -270px;
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 650px) {
   .menu {
     width: 250px;
     left: -250px;
@@ -181,7 +195,7 @@ h1 {
 
 .about{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 400px);
+	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 40px;	/* マス同士の間隔を40px空ける */
 	justify-content: center;
     align-items: center;/* マス全体を中央寄せ */
@@ -190,9 +204,9 @@ h1 {
 	
 }
 
-@media (max-width: 450px) {
+@media (max-width: 850px) {
 .about{
-  grid-template-columns: repeat(1,300px);
+  grid-template-columns: repeat(1,70%);
 }
 	.about img{
 		width:100%;
@@ -200,6 +214,18 @@ h1 {
 		max-width: 100%;
 	}
 }
+
+@media (max-width: 600px) {
+.about{
+  grid-template-columns: repeat(1,100%);
+}
+	.about img{
+		width:100%;
+		height:auto;
+		max-width: 100%;
+	}
+}
+
 
 .text{
 	text-align:center;
