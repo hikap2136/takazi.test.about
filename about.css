@@ -204,7 +204,7 @@ h1 {
 	
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
 .about{
   grid-template-columns: repeat(1,70%);
 }
